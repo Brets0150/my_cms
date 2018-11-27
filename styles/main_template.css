@@ -1,0 +1,276 @@
+/* START CSS Document 
+//////
+Related colors
+EEF1FF
+57677f
+1755B2
+///////
+*/
+
+/*  Main page Body Setings*/
+body {
+	font-family: "Lato", sans-serif;
+	background-color: #EEF1FF;
+}
+td,th {
+	background-color: #;
+}
+
+/* START Side Navbar controls*/
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #172FB2;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 10px 10px 10px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #4C91FF;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .btn_close {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.sidenav input[type=submit]{
+    padding: 10px 10px 10px 32px;
+    background-color: #172FB2;
+    text-decoration: none;
+    font-size: 25px;
+    color: #4C91FF;
+    transition: 0.3s;
+	border: none;
+}
+
+.sidenav input[type=submit]:hover {
+    color: #f1f1f1;
+}
+
+input[type=submit]:focus,change {
+	outline: none;
+}
+
+input[type=text]:focus {
+    border-color:#333;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav input[type=submit] {font-size: 18px;}
+}
+/* END Side Nav controls*/
+
+
+/* START Main Content Controls*/
+
+div.homepage-container {
+    margin: 0px;
+    line-height: 170%;
+}
+
+div.content {
+	background-color:#57677f;
+    margin-left: auto;
+	margin-right: auto;
+	padding-left:10px;
+	padding-right:10px;
+    overflow: hidden;
+    max-width:790px;
+    margin-left: auto;
+    margin-right: auto;
+	alignment-adjust:auto;
+	color:white;
+	border-bottom-left-radius:15px;
+	border-bottom-right-radius:15px;
+	padding-bottom:20px;
+}
+
+div.header {
+	border-top-left-radius:15px;
+	border-top-right-radius:15px;
+    padding: 20px;
+    color: white;
+    background-color: #172EB2;
+    max-width:770px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.sub-header {
+    padding: 0px;
+    color: white;
+    background-color: #172EB2;
+    max-width:810px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.footer {
+	position: fixed;
+    padding: 10px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #172EB2;
+    color: white;
+    text-align: center;
+    height:10px;
+}
+
+h1.header {
+    padding: 0;
+    margin: 0;
+}
+
+p, h1, h2, h3{
+	color: white;	
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+img{
+    max-height:500px;
+    max-width:500px;
+    height:auto;
+    width:auto;
+}
+/* END Main Content Controls*/
+
+
+/*  START Admin Contols Page CSS */
+div.sub-navbar {
+	padding-bottom:10px;
+    color: white;
+    background-color: #172EB2;
+    max-width:770px;
+	width:100%;
+}
+
+div.sub-navbar input[type=submit] {
+    background-color: #172FB2;
+    text-decoration: none;
+	border-width: 0;
+	border-right-width: 1px;
+    font-size: 15px;
+    color: #4C91FF;
+    transition: 0.3s;
+}
+
+div.sub-navbar input[type=submit]:hover {
+	color: #f1f1f1;
+}
+
+div.sub-navbar form {
+    display: inline;
+}
+/*  END Admin Contols Page CSS */
+
+/* START Ticket Review Controls*/
+.column {
+	float: left;
+	text-align:center;
+    width: 25%;
+    padding: 0px;
+    cursor: pointer;
+    color: white;
+}
+
+a:link {
+	color: #FFE4E3; 
+}
+
+a:visited { 
+	color: #B28730; 
+}
+
+a:hover { 
+	color: white; 
+	transition: 0.3s;
+	}
+
+a:active {
+	color: #B28730; 
+}
+
+.submit
+{
+	margin:15px;
+}
+
+.data-column {
+	width: 100%;
+    float: center;
+    padding: 15px;
+    text-align: left;
+    font-size: 15px;
+    color: white;
+	justify-content: space-between;	
+}
+
+.container-tab {
+    padding: 0px 0px 20px 20px;
+    color: white;
+	width:97.5%;
+	border-bottom-left-radius:10px;
+	border-bottom-right-radius:10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;	
+}
+
+row {
+	padding-left:5px;
+	padding-right:5px;	
+}
+
+
+/* Closable button inside the container tab */
+.row-closebtn {
+    float: left;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+.data-column input[type=number]  {
+    width: 70px;
+} 
+
+/*  END Ticket Review Controls
+ width: 100%;
+
+
+ */
