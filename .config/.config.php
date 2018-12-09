@@ -1,0 +1,15 @@
+<?php
+//////////////////////////////////////
+// START Main Config backend Page ///
+////////////////////////////////////
+///
+$var_root_web_dir = $_SERVER["DOCUMENT_ROOT"]."/my_cms/";
+$var_website_name = "My CMS System";
+$var_website_banner_name = "My CMS Simply System!"
+///
+///////////////////////////////////////
+// END Main Config backend Page  /////
+/////////////////////////////////////
+///
+
+?>

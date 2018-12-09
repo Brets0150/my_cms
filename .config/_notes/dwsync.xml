@@ -2,6 +2,9 @@
 <dwsync>
 <file name=".sql.php.example.php" server="dcxp.tdcme.com:2200//" local="131730407480000000" remote="131730407480000000" />
 <file name="notes.txt" server="dcxp.tdcme.com:2200//" local="131734421110000000" remote="131734421110000000" />
-<file name=".sql.php" server="dcxp.tdcme.com:2200//" local="131730407480000000" remote="131730407480000000" />
-<file name="dcxp_dummy.sql" server="dcxp.tdcme.com:2200//" local="131734421130000000" remote="131734421130000000" />
+<file name="notes.txt" server="10.10.10.71//var/www/gardenhq/my_cms/" local="131887232829843750" remote="131888041750000000" />
+<file name=".config.php" server="10.10.10.71//var/www/gardenhq/my_cms/" local="131888018817656250" remote="131888041740000000" />
+<file name=".sql.php" server="10.10.10.71//var/www/gardenhq/my_cms/" local="131887258158593750" remote="131888041740000000" />
+<file name="my_cms_database.sql" server="10.10.10.71//var/www/gardenhq/my_cms/" local="131888020662945168" remote="131888041750000000" />
+<file name=".sql.php.example.php" server="10.10.10.71//var/www/gardenhq/my_cms/" local="131887255953437500" remote="131888041750000000" />
 </dwsync>

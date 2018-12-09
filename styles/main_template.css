@@ -5,12 +5,30 @@ EEF1FF
 57677f
 1755B2
 ///////
-*/
 
+Main colors 
+
+172FB2
+Old
+#EEF1FF
+*/
+:root {
+  --main-bg-color               : #0a290a; 
+  --sidenav-bg-color            : #196719;
+  --sidenav-link-color          : white;
+  --hover-color                 : #f1f1f1;
+  --header-footer-subnav-color  : #196719;
+  --text-color                  : white;
+  --link-color					: #FFE4E3;
+  --visted-link-color           : #B28730;
+  --active-link-color           : #80ff80;
+  --contect-area-color          : #57677f;
+   
+}
 /*  Main page Body Setings*/
 body {
 	font-family: "Lato", sans-serif;
-	background-color: #EEF1FF;
+	background-color: var(--main-bg-color);
 }
 td,th {
 	background-color: #;
@@ -24,7 +42,7 @@ td,th {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #172FB2;
+    background-color: var(--sidenav-bg-color);
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -34,13 +52,13 @@ td,th {
     padding: 10px 10px 10px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: #4C91FF;
+    color: var(--sidenav-link-color);
     display: block;
     transition: 0.3s;
 }
 
 .sidenav a:hover {
-    color: #f1f1f1;
+    color: var(--hover-color);
 }
 
 .sidenav .btn_close {
@@ -53,16 +71,16 @@ td,th {
 
 .sidenav input[type=submit]{
     padding: 10px 10px 10px 32px;
-    background-color: #172FB2;
+    background-color: var(--sidenav-bg-color);
     text-decoration: none;
     font-size: 25px;
-    color: #4C91FF;
+    color: var(--sidenav-link-color);
     transition: 0.3s;
 	border: none;
 }
 
 .sidenav input[type=submit]:hover {
-    color: #f1f1f1;
+    color: var(--hover-color);
 }
 
 input[type=submit]:focus,change {
@@ -93,7 +111,7 @@ div.homepage-container {
 }
 
 div.content {
-	background-color:#57677f;
+	background-color:var(--contect-area-color);
     margin-left: auto;
 	margin-right: auto;
 	padding-left:10px;
@@ -103,7 +121,7 @@ div.content {
     margin-left: auto;
     margin-right: auto;
 	alignment-adjust:auto;
-	color:white;
+	color:var(--text-color);
 	border-bottom-left-radius:15px;
 	border-bottom-right-radius:15px;
 	padding-bottom:20px;
@@ -113,8 +131,8 @@ div.header {
 	border-top-left-radius:15px;
 	border-top-right-radius:15px;
     padding: 20px;
-    color: white;
-    background-color: #172EB2;
+    color: var(--text-color);
+    background-color: var(--header-footer-subnav-color);
     max-width:770px;
     margin-left: auto;
     margin-right: auto;
@@ -122,8 +140,8 @@ div.header {
 
 div.sub-header {
     padding: 0px;
-    color: white;
-    background-color: #172EB2;
+    color: var(--text-color);
+    background-color: var(--header-footer-subnav-color);
     max-width:810px;
     margin-left: auto;
     margin-right: auto;
@@ -135,8 +153,8 @@ div.footer {
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: #172EB2;
-    color: white;
+    background-color: var(--header-footer-subnav-color);
+    color: var(--text-color);
     text-align: center;
     height:10px;
 }
@@ -147,7 +165,7 @@ h1.header {
 }
 
 p, h1, h2, h3{
-	color: white;	
+	color: var(--text-color);	
 }
 
 .center {
@@ -169,24 +187,24 @@ img{
 /*  START Admin Contols Page CSS */
 div.sub-navbar {
 	padding-bottom:10px;
-    color: white;
-    background-color: #172EB2;
+    color: var(--text-color);
+    background-color: var(--header-footer-subnav-color);
     max-width:770px;
 	width:100%;
 }
 
 div.sub-navbar input[type=submit] {
-    background-color: #172FB2;
+    background-color: var(--sidenav-bg-color);
     text-decoration: none;
 	border-width: 0;
 	border-right-width: 1px;
     font-size: 15px;
-    color: #4C91FF;
+    color: var(--sidenav-link-color);
     transition: 0.3s;
 }
 
 div.sub-navbar input[type=submit]:hover {
-	color: #f1f1f1;
+	color: var(--hover-color);
 }
 
 div.sub-navbar form {
@@ -201,24 +219,24 @@ div.sub-navbar form {
     width: 25%;
     padding: 0px;
     cursor: pointer;
-    color: white;
+    color: var(--text-color);
 }
 
 a:link {
-	color: #FFE4E3; 
+	color: var(--link-color); 
 }
 
 a:visited { 
-	color: #B28730; 
+	color: var(--visted-link-color); 
 }
 
 a:hover { 
-	color: white; 
+	color: var(--text-color); 
 	transition: 0.3s;
 	}
 
 a:active {
-	color: #B28730; 
+	color: var(--active-link-color); 
 }
 
 .submit
@@ -232,13 +250,13 @@ a:active {
     padding: 15px;
     text-align: left;
     font-size: 15px;
-    color: white;
+    color: var(--text-color);
 	justify-content: space-between;	
 }
 
 .container-tab {
     padding: 0px 0px 20px 20px;
-    color: white;
+    color: var(--text-color);
 	width:97.5%;
 	border-bottom-left-radius:10px;
 	border-bottom-right-radius:10px;
@@ -260,7 +278,7 @@ row {
 /* Closable button inside the container tab */
 .row-closebtn {
     float: left;
-    color: white;
+    color: var(--text-color);
     font-size: 35px;
     cursor: pointer;
 }

@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <dwsync>
-<file name=".global.functions.php" server="dcxp.tdcme.com:2200//" local="131741544130000000" remote="131741544130000000" />
-<file name=".admin_user_controls.php" server="dcxp.tdcme.com:2200//" local="131741559660000000" remote="131741559660000000" />
-<file name=".xp_scoreboard.php" server="dcxp.tdcme.com:2200//" local="131737455610000000" remote="131737455610000000" />
 <file name=".login.php" server="dcxp.tdcme.com:2200//" local="131741576570000000" remote="131741576570000000" />
-<file name=".xp_request.php" server="dcxp.tdcme.com:2200//" local="131734692740000000" remote="131734692740000000" />
 <file name=".test.php" server="dcxp.tdcme.com:2200//" local="131734435970000000" remote="131734435970000000" />
-<file name=".jobs_controller.php" server="dcxp.tdcme.com:2200//" local="131734691670000000" remote="131734691670000000" />
-<file name=".pool_controls.php" server="dcxp.tdcme.com:2200//" local="131737494080000000" remote="131737494080000000" />
-<file name=".admin_review.php" server="dcxp.tdcme.com:2200//" local="131734689450000000" remote="131734689450000000" />
+<file name=".login.php" server="10.10.10.71//var/www/gardenhq/my_cms/" local="131888014910000000" remote="131888041750000000" />
+<file name=".test.php" server="10.10.10.71//var/www/gardenhq/my_cms/" local="131887254330312500" remote="131888041750000000" />
+<file name=".global.functions.php" server="10.10.10.71//var/www/gardenhq/my_cms/" local="131888064599375000" remote="131888064600000000" />
 </dwsync>

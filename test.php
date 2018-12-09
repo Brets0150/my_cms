@@ -61,7 +61,7 @@ if ( isset($_GET['int_cash_pool_date']) ){
 	$int_cash_pool_date = intval($_GET['int_cash_pool_date']);
 	fun_check_db_for_existing_values($str_sql) 
 	// Pull the Data from the Database
-	require($_SERVER["DOCUMENT_ROOT"].".config/.sql.php");
+	require(".config/.sql.php");
 	$str_sql = "SELECT `cash_pool_id` FROM `cash_pool_table` WHERE `cash_pool_month` = '' AND `cash_pool_year` = ''";
 	
 	$str_sql      = "SELECT `job_id`, `job_name`, `job_description`, `job_xp_value` FROM `jobs` WHERE `job_id` = '$int_job_info' ";
@@ -165,7 +165,7 @@ echo "]);
 if ((isset($_GET['int_scoreboard_month'])) && (isset($_GET['int_scoreboard_year'])) ){
 	$int_job_info = intval($_GET['int_job_info']);
 	// Pull the Data from the Database
-	require($_SERVER["DOCUMENT_ROOT"].".config/.sql.php");
+	require(".config/.sql.php");
 	$str_sql      = "SELECT `job_id`, `job_name`, `job_description`, `job_xp_value` FROM `jobs` WHERE `job_id` = '$int_job_info' ";
 	$str_result   = mysqli_query($str_dbConnect,$str_sql);
 	// Build a table with the data given.

@@ -12,7 +12,7 @@ error_reporting(E_ALL);
 ini_set("display_errors", true);
 ///////////////////
 //  Import Global Funtions.
-require_once($_SERVER["DOCUMENT_ROOT"].".functions/.global.functions.php");
+require_once("./.global.functions.php");
 ///
 ///////////////////
 // START LOGIN-FORM Funtion Code //
@@ -46,7 +46,7 @@ if ( isset($_POST["bln_logout"]) ) {
 // Check if login request given.
 if ( isset($_POST["bln_login"]) ) {
 	// Import required files to run and start the seasion.
-	require($_SERVER["DOCUMENT_ROOT"].".config/.sql.php");
+	require("../.config/.sql.php");
 	//
 	// Check if Username and Password were given. If not return to Login page with error code.
 	if ( (isset($_POST["str_username"])) && (isset($_POST["str_password"])) ) {

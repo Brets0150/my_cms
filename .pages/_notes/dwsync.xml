@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <dwsync>
 <file name="footer.php" server="dcxp.tdcme.com:2200//" local="131734695500000000" remote="131734695500000000" />
-<file name="xp_score_board.php" server="dcxp.tdcme.com:2200//" local="131737455260000000" remote="131737455260000000" />
-<file name="xp_request.php" server="dcxp.tdcme.com:2200//" local="131734695470000000" remote="131734695470000000" />
 <file name="header.php" server="dcxp.tdcme.com:2200//" local="131734694360000000" remote="131734694360000000" />
 <file name="home.php" server="dcxp.tdcme.com:2200//" local="131734968980000000" remote="131734968980000000" />
 <file name="settings.php" server="dcxp.tdcme.com:2200//" local="131741581390000000" remote="131741581390000000" />
-<file name="admin_console.php" server="dcxp.tdcme.com:2200//" local="131741578090000000" remote="131741578090000000" />
+<file name="footer.php" server="10.10.10.71//var/www/gardenhq/my_cms/" local="131888017144375000" remote="131888041860000000" />
+<file name="header.php" server="10.10.10.71//var/www/gardenhq/my_cms/" local="131888007841562500" remote="131888041860000000" />
+<file name="home.php" server="10.10.10.71//var/www/gardenhq/my_cms/" local="131888019701718750" remote="131888041860000000" />
+<file name="settings.php" server="10.10.10.71//var/www/gardenhq/my_cms/" local="131888042390625000" remote="131888042390000000" />
 </dwsync>

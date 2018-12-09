@@ -12,7 +12,7 @@ error_reporting(E_ALL);
 ini_set("display_errors", true);
 ///////////////////
 //  Import Global Funtions.
-require_once($_SERVER["DOCUMENT_ROOT"].".functions/.global.functions.php");
+require_once(".functions/.global.functions.php");
 ///
 // Confirm the submittion came for a signed in User.
 fun_check_user_rights();

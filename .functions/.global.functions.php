@@ -72,7 +72,7 @@ function fun_message_redirect($var_page, $str_message) {
 //    Clean string data given by user input. Securly clean 
 //    and check the data, then return the cleaned data
 function fun_clean_input_data($str_data_to_be_cleaned) {
-	require($_SERVER["DOCUMENT_ROOT"].".config/.sql.php");
+	require("../.config/.sql.php");
 	// Remove extra tailing and leading spaces from the string.
 	$str_data_to_be_cleaned = trim($str_data_to_be_cleaned);
 	// Strip NULL, HTML and PHP tags from the string
@@ -95,7 +95,7 @@ function fun_check_db_for_existing_values($str_tmp_sql) {
 	// Example for "$str_tmp_sql"
 	// $str_tmp_sql = "SELECT `job_id` FROM `jobs` WHERE `job_name` = '$str_job_name'";
 	///
-	require($_SERVER["DOCUMENT_ROOT"].".config/.sql.php");
+	require("../.config/.sql.php");
 	$str_result = mysqli_query($str_dbConnect,$str_tmp_sql);
 	$ary_row = mysqli_fetch_array($str_result,MYSQLI_ASSOC);
 	$int_count = mysqli_num_rows($str_result);
@@ -127,7 +127,7 @@ function fun_get_one_varabile_from_db($str_tmp_sql, $var_column_to_return) {
 	// Example for "$str_tmp_sql"
 	// $str_tmp_sql = "SELECT `job_id` FROM `jobs` WHERE `job_name` = '$str_job_name'";
 	///
-	require($_SERVER["DOCUMENT_ROOT"].".config/.sql.php");
+	require("../.config/.sql.php");
 	$str_result = mysqli_query($str_dbConnect,$str_tmp_sql);
 	$ary_row = mysqli_fetch_array($str_result);
 	// return the results of the check.
@@ -145,7 +145,7 @@ function fun_array_varabile_from_db($str_tmp_sql) {
 	// Example for "$str_tmp_sql"
 	// $str_tmp_sql = "SELECT `job_id` FROM `jobs` WHERE `job_name` = '$str_job_name'";
 	///
-	require($_SERVER["DOCUMENT_ROOT"].".config/.sql.php");
+	require("../.config/.sql.php");
 	$str_result = mysqli_query($str_dbConnect,$str_tmp_sql);
 	$ary_row = mysqli_fetch_array($str_result,MYSQLI_ASSOC);
 	// return the results of the check.
@@ -154,6 +154,28 @@ function fun_array_varabile_from_db($str_tmp_sql) {
 ///
 // END Get a Get ARRAY variable from the Database Funtion ///
 //
+function fun_navbar() {
+	/////////////////////////////////////
+	// If User logged in display UserName.
+	echo '<h1 style="padding: 10px 10px 10px 32px;text-decoration: none;font-size: 25px;color: white;transition: 0.3s;border: none;">
+	<u>User:&nbsp;&nbsp;'.$_SESSION["str_username"].'</u></h1>';
+	///
+	// Pages that can be loaded
+	echo '<form action="/" method="post" enctype="multipart/form-data" name="page_1"><input name="var_page" type="hidden" value="page_1" /><input type="submit" value="Page 1" /></form>';
+	echo '<form action="/" method="post" enctype="multipart/form-data" name="page_2"><input name="var_page" type="hidden" value="page_2" /><input type="submit" value="Page 2" /></form>';
+	///
+	// If the logged in User has admin status show admin_control link.
+	if ($_SESSION["bln_admin"]) {
+		echo '<form action="/" method="post" enctype="multipart/form-data" name="adc_form"><input name="var_page" type="hidden" value="admin_console" /><input type="submit" value="Admin Control" /></form>';
+	}
+	// Settings Button
+	echo '<form action="/" method="post" enctype="multipart/form-data" name="settings_form"><input name="var_page" type="hidden" value="settings" /><input type="submit" value="Settings" /></form>';
+	// Logout Button
+	echo '<form action="/.functions/.login" method="post" enctype="multipart/form-data" name="logout_form">
+			<input name="bln_logout" type="hidden" value="TRUE" /><input type="submit" value="Logout" /></form>';
+	///	
+}
+
 ///
 /////////////////////////////
 // END Global Functions ////
