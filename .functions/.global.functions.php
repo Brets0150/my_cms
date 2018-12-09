@@ -166,7 +166,7 @@ function fun_navbar() {
 	///
 	// If the logged in User has admin status show admin_control link.
 	if ($_SESSION["bln_admin"]) {
-		echo '<form action="/" method="post" enctype="multipart/form-data" name="adc_form"><input name="var_page" type="hidden" value="admin_console" /><input type="submit" value="Admin Control" /></form>';
+		//echo '<form action="/" method="post" enctype="multipart/form-data" name="adc_form"><input name="var_page" type="hidden" value="admin_console" /><input type="submit" value="Admin Control" /></form>';
 	}
 	// Settings Button
 	echo '<form action="/" method="post" enctype="multipart/form-data" name="settings_form"><input name="var_page" type="hidden" value="settings" /><input type="submit" value="Settings" /></form>';

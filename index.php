@@ -22,7 +22,8 @@ echo'<div id="Sidenav" class="sidenav">
 ///
 // Check if a User is already logged in.
 if (isset($_SESSION["str_username"])) {
-
+	require("./.functions/.global.functions.php");
+	fun_navbar();
 } else {
 	// ELSE If User not logged in display login prompt using the "fun_login_form()" funtion.
 	require(".functions/.login.php");

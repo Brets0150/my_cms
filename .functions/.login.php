@@ -12,7 +12,7 @@ error_reporting(E_ALL);
 ini_set("display_errors", true);
 ///////////////////
 //  Import Global Funtions.
-require_once("./.global.functions.php");
+require_once($_SERVER['DOCUMENT_ROOT']."/.functions/.global.functions.php");
 ///
 ///////////////////
 // START LOGIN-FORM Funtion Code //
